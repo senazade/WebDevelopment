@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalam', cursive;
+}
+
+#main-container {
+    background-color:#3b3838;
+    width: 100%;
+    position: relative;
+    padding: 5% 0 0 0;
+    height: 1000px;
+    
+}
+
+.site-container {
+   width: 90%;
+   height: 100%;
+   margin: 0 auto;
+   background-color: #fff;
+   display: flex;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog-container {
+    width: 20%;
+    background-color: #202020;
+    height: 100%;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fa {
+    color: rgba(9,120,121,1);
+    padding: 15px;
+    text-align: center;
+    display:block;
+    cursor: pointer;
+}
+
+.info-container {
+    background-color: #2a2b2a;
+    width: 80%;
+    position: relative;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-images {
+    position: relative;
+    -webkit-animation: mainImgAnimation 1s forwards;
+    animation: mainImgAnimation 1s forwards;
+}
+
+.main-images img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: black;
+    position: relative;
+    opacity: 0.5;
+}
+
+.main-images #buttons {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    -webkit-animation: buttonsAnimation 1s ease-out;
+    animation: buttonsAnimation 1s ease-out;
+}
+
+.icons {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40%;
+    font-size: 25px;
+}
+
+#buttons .signUp, .signIn, .signInButton{
+    padding: 3px 20px;
+    background-color: #554d4d77;
+    border: none;
+    font-size: 15px;
+    border: 2px solid rgba(9, 119, 121, 0.349);;
+}
+
+.shopping-cart {
+    position: relative;
+    width: 50px;
+    border-radius: 50%;
+    padding: 5px;
+    padding-right: 10px;
+    top: 20px;
+    left: 3px;
+    border: 2px solid #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(9,120,121,1) 0%, rgba(120,241,255,1) 100%);
+
+}
+
+.shopping-cart:hover {
+    cursor: pointer;
+    border: none;
+    box-shadow:  0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);;
+    transition-duration: 0.5s;
+    -webkit-animation: buttonHoverAnimation 1s infinite;
+    animation: buttonHoverAnimation 1s infinite;
+}
+
+#buttons button:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(9,120,121,1) 0%, rgba(120,241,255,1) 100%);
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition-duration: 0.5s;
+    -webkit-animation: buttonHoverAnimation 1s infinite;
+    animation: buttonHoverAnimation 1s infinite;
+}
+
+#buttons .cart-number {
+    width: 20px;
+    font-size: 25px;
+    position: absolute;
+    left: 95%;
+    bottom: 10px;
+    color: #fff;
+}
+
+.logo-container {
+    height: 25%;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+.logo-container h1 {
+    color: rgba(9,120,121,1);
+    position: absolute;
+    left: 15px;
+    top: 35%;
+    -webkit-animation: logoAnimation 2s forwards;
+    animation: logoAnimation 2s forwards;
+}
+
+.home-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    list-style-type: none;
+    margin-top: 80px;
+}
+
+.home-container li {
+    font-size: 25px;
+    padding: 15px;
+    padding-left: 36px;
+    width: 100%;
+    color: rgba(138, 133, 133, 0.575);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation: aboutAnimation 1s forwards;
+    animation: aboutAnimation 1s forwards;
+}
+
+.home-container li:hover {
+    color: rgba(9, 119, 121, 0.63);
+    border-left: 3px solid rgba(9, 119, 121, 0.63);
+    cursor: pointer;
+    border-bottom: 3px solid #3b38386b;
+    border-top: 3px solid #3b383869;
+    transition-duration: 0.5s;
+}
+
+.heading {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 20%;
+    -webkit-animation: headerAnimation 2s forwards;
+    animation: headerAnimation 2s forwards;
+}
+
+.heading p {
+    color: #262626;
+    font-size: 35px;
+    widows: 80%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.songs-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: -100px;
+    height: 220px;
+    -webkit-animation: songsAnimation 1s ease-out;
+    animation: songsAnimation 1s ease-out;
+}
+
+.new-info {
+    width: 25%;
+    height: 100%;
+    border-right: 3px solid #3b3838;
+    background-color: #2a2b2a;
+    box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.new-info p {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(104, 93, 93);
+    box-shadow: 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box-25 {
+    width: 25%;
+    height: 100%;
+    position: relative;
+    background-color: #2a2b2a;
+}
+
+.box-25:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(9,120,121,1) 0%, rgba(120,241,255,1) 100%);
+    transition-duration: 0.5s;
+}
+
+.song .song-img {
+   width: 100%;
+   height: 100%;
+   position: absolute; 
+   background-color: #000000;
+   opacity: 0.8;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.song .Buy-now {
+    position: relative;
+    float: right;
+    /* z-index: 1; */
+    margin-top: 76%;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(9,120,121,1) 0%, rgba(120,241,255,1) 100%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+}
+
+.song .Buy-now:hover {
+    -webkit-animation: buyAnimation 1s infinite;
+    animation: buyAnimation 1s infinite;
+    cursor: pointer;
+}
+
+.play-song img{
+    position: absolute;
+    width: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(9,120,121,1) 0%, rgba(120,241,255,1) 100%);
+    cursor: pointer;
+    transition-duration: 0.5;
+    -webkit-animation: buttonHoverAnimation 1s infinite;
+    animation: buttonHoverAnimation 1s infinite;
+}
+
+.footer {
+    width: 100%;
+    background-color:#3b3838;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.footer p {
+    color: rgba(9,120,121,1);
+    font-size: 20px;
+}
+
+/* Sign up and login */
+
+#Registration {
+   width: 70%;
+   display: flex;
+   position: absolute;
+   top: 10%;
+   left: 15%;
+   height: 60%;
+   background-color: #fff;
+   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.19);
+   visibility: hidden;
+}
+
+.sign-up {
+   width: 60%;
+   background-color: #fff;
+   -webkit-animation: signUp 1s ease-out;
+    animation: signUpAnimation 1s ease-out;
+}
+
+#login {
+    background-color:rgba(9,120,121,1);
+    color: #fff;
+    width: 40%;
+}
+
+#login-content {
+    text-align: center;
+    margin-top: 35%;
+    visibility: hidden;
+}
+
+#login-content h1 {
+    font-size: 40px;
+}
+
+#login-content p {
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+#login-content button {
+    width: 50%;
+    padding: 10px;
+    margin-top: 40px;
+    border:1px solid #fff;
+    border-radius: 20px;
+    background-color:rgba(9,120,121,1);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#sign-up-content {
+    text-align: center;
+    margin-top: 10%;
+    visibility: hidden;
+}
+
+#sign-up-content h1 {
+    font-size: 40px;
+    color: rgba(9,120,121,1);
+}
+
+#sign-up-content .sign-up-icons i {
+    border: 1px solid rgb(124, 126, 126);
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 50px;
+    padding: 15px;
+}
+
+#sign-up-content .sign-up-icons i:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+#sign-up-content p {
+    margin-top: 20px;
+    color: #777474;
+}
+
+#sign-up-content .input-fields {
+    margin-top: 20px;
+}
+
+#sign-up-content .input-fields input {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-top: 10px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+}
+
+#sign-up-content button {
+    width: 35%;
+    padding: 10px;
+    margin-top: 40px;
+    border:1px solid #fff;
+    border-radius: 20px;
+    background-color:rgba(9,120,121,1);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#sign-up-content .close {
+    float: right;
+    position: relative;
+    bottom: 60px;
+    /* bottom: 140px; */
+    right: 5px;
+    cursor: pointer;
+}
+
+#hello-friend .close {
+    float: right;
+    position: relative;
+    bottom: 120px;
+    left: 25px;
+    cursor: pointer;
+}
+
+#success-msg {
+    visibility: hidden;
+    color:rgba(9,120,121,1);
+    font-size: 30px;
+    position: absolute;
+    top: 15%;
+    right: 16%;
+    text-align: center;
+}
+
+#success-msg p{
+    color:#777474;
+}
+
+#hello-friend {
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+  position: absolute;
+  top: 20%;
+}
+
+#hello-friend h1{
+    font-size: 40px;
+}
+
+#hello-friend p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#hello-friend button {
+    width: 35%;
+    padding: 10px;
+    margin-top: 40px;
+    border:1px solid #fff;
+    border-radius: 20px;
+    background-color:rgba(9,120,121,1);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#sign-in-to-vocalize{
+    visibility: hidden;
+    position: absolute;
+    top: 10%;
+    left: 13%;
+}
+
+#sign-in-to-vocalize .input-fields input {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 10px;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    width: 80%;
+}
+
+#login-success-msg {
+    visibility: hidden;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    font-size: 20px;
+    color: rgba(9,120,121,1);
+}
+
+#login-success-msg p{
+    position: absolute;
+    color: #747a74;
+}
+
+
+
+
+
