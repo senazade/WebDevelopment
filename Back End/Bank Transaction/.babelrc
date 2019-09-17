@@ -1,0 +1,17 @@
+{
+	"presets": [
+		
+		[ "@babel/preset-env", {
+			"targets": {
+				"node": "current"
+			}
+		}],
+
+	],
+	"plugins": [
+		"syntax-flow",
+		"transform-flow-strip-types",
+		"transform-flow-comments",
+	],
+	"retainLines": false
+}
