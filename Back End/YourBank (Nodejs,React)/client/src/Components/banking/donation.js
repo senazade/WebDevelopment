@@ -10,14 +10,10 @@ export class donation extends Component {
                 <ul className="nav justify-content-end mr-3 p-3">
                     <form className="form-inline md-form form-sm mt-0 mr-3">
                       <i className="fa fa-search" aria-hidden="true"></i>
-                      <input className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"  aria-label="Search"></input>           
+                      <input className="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search"></input>           
                     </form>
                     <li className="nav-item">
                       <button type="button" className="btn btn-danger ml-3">Create Donation Option</button>
-                    </li>
-
-                    <li className="nav-item">            
-                      {/* search  */}
                     </li>
                 </ul>
           </div>

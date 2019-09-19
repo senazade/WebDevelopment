@@ -3,6 +3,7 @@ import invoice from '../Components/images/invoice.jpg'
 import confirmation from '../Components/images/credit-confirmation.gif'
 import financeGuru from '../Components/images/finance-guru.gif'
 import emptyWallet from '../Components/images/empty-wallet.jpg'
+import { Link } from 'react-router-dom';
 
 
 const Choices = () => {
@@ -23,7 +24,9 @@ const Choices = () => {
         <div className="first text-box shadow p-3 mb-5 bg-white rounded" data-aos="fade-left" data-aos-duration="1500">
           <h2 className="text-warning">Credit</h2> 
           <p className="margin-top-s text-muted">You can post your own credit option where people looking for a credit can see. You can post your own credit option where people looking for a credit can see. </p>
+          <Link to="/credit">
           <button type="button" className="btn btn-danger mt-1">Go to Credits</button>
+          </Link>
         </div>
       </div>
     </div>
@@ -54,7 +57,9 @@ const Choices = () => {
         <div className="first text-box shadow p-3 mb-5 bg-white rounded" data-aos="fade-left" data-aos-duration="1500">
           <h2 className="text-warning">Transactions</h2>
           <p className="margin-top-s text-muted">Empty wallet? In a hurry? No problem, just by entering credit card details you can instantly send and recieve money from your family and friends. </p>
+          <Link to="/transaction">
           <button type="button" className="btn btn-danger mt-1">Go to Transactions</button>
+          </Link>
         </div>
       </div>
     </div>

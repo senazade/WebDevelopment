@@ -23,8 +23,8 @@ function App() {
           <Route exact path='/sign-up' component={SignUp}></Route>
           <Route exact path='/sign-in' component={SignIn}></Route>
           <Route exact path='/credit' component={credit}></Route>
-          <Route exact path='/transaction' component={transaction}></Route>
           <Route exact path='/donate' component={donation}></Route>
+          <Route exact path='/transaction' component={transaction}></Route>
         </Switch>
       <Footer />
     </div>

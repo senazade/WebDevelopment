@@ -1,5 +1,6 @@
 import React from 'react'
 import headerpic from '../Components/images/success.mp4'
+import { Link } from 'react-router-dom';
 
 const NavImage = () => {
   return (
@@ -14,7 +15,9 @@ const NavImage = () => {
              <div className="w-100">
                  <h1 className="display-4 font-weight-bold text-muted" data-aos="fade-down" data-aos-duration="1500">Your Whole Life is</h1>
                  <p className="display-1 font-weight-bold text-dark" data-aos="fade-up" data-aos-duration="1500">About To Change</p>
+                 <Link to="/sign-up">
                  <button type="button" className="btn navButton btn-danger btn-lg mt-5" data-aos="fade-up" data-aos-duration="3000" >Sign up</button>
+                 </Link>
              </div>
           </div>
        </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -8,7 +8,7 @@ const Navbar = () => {
           <span className="navbar-brand mb-0 p-3 h1 mx-3 font-weight-bold">YourBank</span>
           <ul className="nav justify-content-end mr-3 p-3">
               <li className="nav-item">
-                <a className="nav-link font-size text-secondary" href="/about">About</a>
+                <a className="nav-link font-size text-secondary" href="/">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link text-secondary" href="/credit">Credit</a>
@@ -22,8 +22,10 @@ const Navbar = () => {
               <li className="nav-item">
                 <a className="nav-link text-secondary" href="/profile">Profile</a>
               </li>
-              <li className="nav-item">            
+              <li className="nav-item">        
+              <Link to="/sign-in">    
                 <button type="button" className="btn btn-danger ml-3">Sign in</button>
+              </Link>
               </li>
           </ul>
        </div>
